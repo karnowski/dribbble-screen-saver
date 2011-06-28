@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
+require 'bundler/setup'
 require 'swish'
 
 (1..10).to_a.each do |page|
