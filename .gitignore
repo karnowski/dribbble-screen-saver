@@ -1,1 +1,2 @@
-shots/*.png
+shots*/*.png
+.DS_Store
