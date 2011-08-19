@@ -4,6 +4,13 @@ require 'rubygems'
 require 'bundler/setup'
 require 'swish'
 
+if ARGV.length > 0 && ARGV.first == "--new"
+  require 'fileutils'
+  iso_date = Time.now.strftime("%Y-%m-%d-%H:%M:%S")
+  FileUtils::mv "./shots", "./shots-#{iso_date}", :verbose => true if File.exist?("./shots")
+  FileUtils::mkdir_p "./shots", :verbose => true
+end
+
 (1..10).to_a.each do |page|
   Dribbble::Shot.popular(:page => page, :per_page => 30).each do |shot|
     filename = "./shots/shot-#{shot.id}.png"
