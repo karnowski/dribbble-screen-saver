@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     crack (0.1.8)
-    httparty (0.7.7)
+    httparty (0.7.8)
       crack (= 0.1.8)
     swish (0.8.0)
 
@@ -10,5 +10,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty (= 0.7.7)
+  httparty (= 0.7.8)
   swish (= 0.8.0)
