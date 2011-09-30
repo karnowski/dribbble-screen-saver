@@ -12,6 +12,7 @@ if ARGV.length > 0 && ARGV.first == "--new"
 end
 
 (1..10).to_a.each do |page|
+  puts "Reading page #{page} of 10..."
   Dribbble::Shot.popular(:page => page, :per_page => 30).each do |shot|
     filename = "./shots/shot-#{shot.player.username}-#{shot.id}.png"
 
