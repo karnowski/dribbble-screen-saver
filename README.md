@@ -1,3 +1,14 @@
+-------------------------------------------------- 
+
+## UPDATE 2018-10-01
+
+Note that the Dribbble API has been altered and no longer supports the ability to download popular shots.  This effectively kills this screenshot project unless Dribbble makes new allowances in the future.
+
+https://developer.dribbble.com/v2/shots/
+
+-------------------------------------------------- 
+
+
 ## To Setup
 
     gem install bundler
